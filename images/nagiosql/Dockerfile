@@ -1,6 +1,6 @@
 # Note: the image is nearly 3x bigger under ubuntu than alpine
 # TODO: switch to alpine whenever nagios4 is available for it
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Rich Braun "docker@instantlinux.net"
 ARG BUILD_DATE
 ARG VCS_REF
