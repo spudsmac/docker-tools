@@ -19,7 +19,7 @@ stages:
   - rsyslogd
   - samba
   - spamassassin
-  - udp-nbinx-proxy
+  - udp-nginx-proxy
   - vsftpd
   - wxcam-upload
 # This build takes too long under qemu
