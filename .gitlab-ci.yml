@@ -2,8 +2,8 @@
 
 stages:
   - prepare
-  - blacklist
   - data-sync
+  - blacklist
   - dhcpd-dns-pxe
   - dovecot
   - ez-ipupdate
@@ -136,6 +136,15 @@ nagiosql:
       job: prepare
   only:
     changes: [ images/nagiosql/**, lib/**, .image-gitlab-ci.yml ]
+
+nut-upsd:
+  stage: nut-upsd
+  trigger:
+    include:
+    - artifact: .child-nut-upsd.yml
+      job: prepare
+  only:
+    changes: [ images/nut-upsd/**, lib/**, .image-gitlab-ci.yml ]
 
 postfix:
   stage: postfix
