@@ -12,6 +12,7 @@ stages:
   - haproxy-keepalived
   - mt-daapd
   - nagiosql
+  - nut-upsd
   - postfix
   - proftpd
   - python-builder
